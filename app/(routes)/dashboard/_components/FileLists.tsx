@@ -40,8 +40,8 @@ function FileLists() {
     }, [fileList_]);
 
     return (
-        <div className="overflow-x-auto mt-10">
-            <table className="min-w-full divide-y-2 dark:bg-zinc-950 divide-gray-200 bg-white dark:divide-zinc-700 text-sm">
+        <div className="overflow-x-auto mt-10 dark:bg-zinc-950 divide-gray-200 bg-white dark:divide-zinc-700">
+            <table className="min-w-full divide-y-2 text-sm">
                 <thead className="ltr:text-left rtl:text-right">
                     <tr>
                         <td className="whitespace-nowrap px-4 py-2 font-bold text-gray-900 dark:text-gray-300">
@@ -75,7 +75,7 @@ function FileLists() {
                                 <td className="whitespace-nowrap px-4 py-2 text-gray-700">
                                     {moment(file._creationTime).format(
                                         "DD MMM YYYY"
-                                    )}{" "}
+                                    )}
                                 </td>
                                 <td className="whitespace-nowrap px-4 py-2 text-gray-700">
                                     {moment(file._creationTime).format(
@@ -100,7 +100,7 @@ function FileLists() {
                                         </DropdownMenuTrigger>
                                         <DropdownMenuContent>
                                             <DropdownMenuItem className="gap-3">
-                                                <Archive className="h-4 w-4" />{" "}
+                                                <Archive className="h-4 w-4" />
                                                 Archive
                                             </DropdownMenuItem>
                                         </DropdownMenuContent>
