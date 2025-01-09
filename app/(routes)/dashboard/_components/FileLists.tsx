@@ -75,7 +75,7 @@ function FileLists() {
                                 <td className="whitespace-nowrap px-4 py-2 text-gray-700">
                                     {moment(file._creationTime).format(
                                         "DD MMM YYYY"
-                                    )}{" "}
+                                    )}
                                 </td>
                                 <td className="whitespace-nowrap px-4 py-2 text-gray-700">
                                     {moment(file._creationTime).format(
